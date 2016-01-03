@@ -1,0 +1,174 @@
+﻿@{
+    Layout = "~/Views/Shared/_Teacher.cshtml";
+}
+<style>
+    footer {
+        background-color: #222222;
+    }
+
+    #contact {
+        background-color: black;
+    }
+
+    h4 {
+        color: white;
+    }
+
+    h3 {
+        color: white;
+    }
+
+    h6 {
+        color: white;
+    }
+
+    #en {
+        font-size: large;
+        color: white;
+    }
+
+    #jumbo {
+        background-color: black;
+    }
+</style>
+<nav class=" navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">DataWareHouse<span class="glyphicon glyphicon-registration-mark"></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="~/Home/Layoutstart"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                <li><a href="#collapse1">My-Files</a></li>
+                <li><a href="#add">Add-Subject</a></li>
+                <li><a href="#contact">ContactUs</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="~/Home/Layoutstart"><span class="glyphicon glyphicon-log-out"></span> Sign-Out</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<br />
+<div class="jumbotron text-center" id="jumbo">
+    <div class="container">
+        <img id="photo" src="~/Images/saad.jpg" class="img-circle" alt="image" width="200" height="170">
+    </div>
+    <h3>Saad</h3>
+    <br>
+    <div id="g">
+        <div class="container">
+
+            <div class="panel-group" id="accordion">
+
+                <div class="panel panel-default" style="background-color:antiquewhite">
+                    <div class="panel-heading" style="background-color:firebrick">
+                        <h4 class="panel-title" style="font-weight:bold">
+                            <a style="color:white" data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="collapsed">
+                                Computer Vision
+                            </a>
+                            <button class="btn btn-danger" name="deleteF" id="deleteF"><b>DELETE</b></button>
+                        </h4>
+
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse" style="height: 0px;">
+                        <div class="panel-body">
+                            <form action="/teacher/uploadFile?teacherId=21&amp;folderId=21" enctype="multipart/form-data" method="post">
+
+                                <div class="file-preview ">
+                                    <div class="close fileinput-remove">×</div>
+                                    <div class="">
+                                        <div class="file-preview-thumbnails">
+                                        </div>
+                                        <div class="clearfix"></div>    <div class="file-preview-status text-center text-success"></div>
+                                        <div class="kv-fileinput-error file-error-message" style="display: none;"></div>
+                                    </div>
+                                </div>
+                                <div class="kv-upload-progress hide"></div>
+                                <div class="input-group ">
+                                    <div tabindex="-1" class="form-control input-lg file-caption  kv-fileinput-caption">
+                                        <span class="file-caption-ellipsis">…</span>
+                                        <div class="file-caption-name"></div>
+                                    </div>
+                                    <div class="input-group-btn">
+                                        <button type="button" title="Clear selected files" class="btn btn-danger input-lg fileinput-remove fileinput-remove-button"><i class="glyphicon glyphicon-trash"></i> Remove</button>
+
+                                        <button type="submit" title="Upload selected files" class="btn btn-danger input-lg kv-fileinput-upload fileinput-upload-button"><i class="glyphicon glyphicon-upload"></i> Upload</button>
+                                        <div class="btn btn-success "> <i class="glyphicon glyphicon-folder-open"></i> &nbsp;Browse … <input id="input-id" type="file" name="filefield" class="file" data-preview-file-type="text"></div>
+                                    </div>
+                                </div>
+
+                            </form>
+                            <table class="table">
+                                <thead style="color:firebrick">
+                                    <tr class="info">
+
+                                        <th>FILE NO#</th>
+                                        <th>FILE NAME</th>
+                                        <th>DATE UPDATED</th>
+                                        <th>DELETE FILE</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+        </div><!-- /container -->
+    </div>
+
+    <form class="form-inline" id="add">
+        <input type="text" form-control" size="50" placeholder="Subject Name" required class="input-lg">
+        <button type="button" class="btn btn-danger input-lg"><b>Add Subject</b></button>
+    </form>
+
+</div>
+
+<div id="contact" style=" height: 300px">
+    <div class="container text-center">
+        <h3><b>CONTACT US</b></h3>
+        <div class="row" style="font-family:Arial">
+            <div class="col-sm-4">
+                <h3>Send Us A Message</h3>
+                <h4>bcsf12a037@pucit.edu.pk</h4>
+            </div>
+            <div class="col-sm-4">
+                <h3>Call Us</h3>
+                <h4>111-923-923-ext-113</h4>
+            </div>
+            <div class="col-sm-4">
+                <h3>We Are Social</h3>
+                <a href="#"><span id="en" class="glyphicon glyphicon-envelope"></span></a>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<br />
+
+<footer class="container-fluid text-center">
+    <a href="#" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+    <h6>Created By: <a href="http://www.google.com">BCSF12A037</a></h6>
+</footer>
+
+

@@ -1,0 +1,198 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">DataWareHouse<span class="glyphicon glyphicon-registration-mark"></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#myCarousel"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="#signIn"><span class="glyphicon glyphicon-user"></span> Sign-In</a></li>
+                <li><a href="~/Home/Register"><span class="glyphicon glyphicon-log-in"></span> Register</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container">
+    <br>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="~/Images/pu.jpg" class="img-rounded" alt="Pucit" width="1200" height="300">
+                <div class="carousel-caption">
+                    <h3>Punjab University Allama Iqbal Campus</h3>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="~/Images/lums.jpg" alt="lums" class="img-rounded" width="1200" height="300">
+                <div class="carousel-caption">
+                    <h3>Lahore University of Managemant and Sciences</h3>
+                </div>
+            </div>
+            <div class="item">
+                <img src="~/Images/fast.jpg" alt="fast" class="img-rounded" width="1200" height="300">
+                <div class="carousel-caption">
+                    <h3>National University College of Emerging Sciences</h3>
+                </div>
+            </div>
+            <div class="item">
+                <img src="~/Images/comsats.jpg" alt="comsats" class="img-rounded" width="1200" height="300">
+                <div class="carousel-caption">
+                    <h3>COMSATS Institute of Information Technology</h3>
+                </div>
+            </div>
+            <div class="item">
+                <img src="~/Images/nust.jpg" alt="nust" class="img-rounded" width="1200" height="300">
+                <div class="carousel-caption">
+                    <h3>Natioanl University of Sciences and Technology</h3>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div><br />
+
+<div class="jumbotron" id="signIn" style="background-color:black">
+
+    <h2 class="text-center"><b>WELCOME TO <mark>DATAWAREHOUSE</mark></b></h2>
+    <h3 class="text-center"><b>DOWNLOAD IMPORTANT STUFF FROM</b></h3>
+    <h3 class="text-center"><b>TEACHER'S REPOSITORY</b></h3>
+    <br /><br />
+    <div class="container">
+        <form class="form-horizontal" role="form" action="Teacher.html">
+            <div class="form-group text-center">
+                <label class="control-label col-sm-4" for="email" style="color:white">Email:</label>
+                <div class="col-sm-4">
+                    <input type="email" class="form-control input-lg" id="email" placeholder="Enter email">
+                </div>
+            </div>
+            <div id="pw" class="form-group text-center">
+                <label class="control-label col-sm-4" for="pwd" style="color:white">Password:</label>
+                <div class="col-sm-4" style="font:500">
+                    <input type="password" class="form-control input-lg" id="pwd" placeholder="Enter password">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-4 col-sm-2">
+                    <a class="btn btn-danger btn-sm btn-block" href="~/Home/Teacher" role="button">TEACHER LOG-IN</a>
+                </div>
+                <div class="col-sm-2 text-center">
+                    <a class="btn btn-success btn-sm btn-block" href="~/Home/AllUni" role="button">STUDENT LOG-IN</a>
+                </div>
+            </div>
+         
+        </form>
+            </div>
+        
+    </div>
+
+<br />
+
+
+
+
+
+<br />
+
+<div id="about" style=" height: 500px">
+    <div class="container text-center">
+        <h3><b>ABOUT US</b></h3>
+        <p id="txt" style="color:white;font:100" class="text-center"><b>OUR MISSION IS TO RIGOROUSLY TRAIN OUR STUDENTS IN IT AND AFFILIATED FIELDS SO THAT THEY CAN SERVE HUMANITY WITH SKILS , KNOWLEDGE AND HIGH CHRACTER SO THAT THEY CAN BE A SOURCE OF PRIDE FOR THE NATION OF PAKISTAN.</b></p>
+    </div>
+    <div class="container" style="background-color:black">
+
+        <div class="row">
+            <div class="col-md-3 " style="text-align:center;background-color:black">
+                <a href="#" class="thumbnail" style="background-color:black">
+                    <img src="~/Images/princpal.png" alt="Pucit" style="width:150px;height:150px">
+                    <p style="color:white">Prof. Dr Syed Mansoor Sarwar </p>
+                    <p style="color:white">PRINCIPAL(PUCIT)</p>
+                    <p style="color:white">PhD Computer Engineering, Iowa State University, USA, 1988,MS Computer Engineering, Iowa State University, USA 1985</p>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="#" class="thumbnail" style="text-align:center;background-color:black">
+                    <img src="~/Images/prin2.png" alt="fast" style="width:150px;height:150px">
+                    <p style="color:white">Dr. Amjad Hussain </p>
+                    <p style="color:white">PRINCIPAL(FAST)</p>
+                    <p style="color:white">PhD Computer Engineering, Iowa State University, USA, 1988,MS Computer Engineering, Iowa State University, USA 1985.</p>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="#" class="thumbnail" style="text-align:center;background-color:black">
+                    <img src="~/Images/nustpri.png" alt="fast" style="width:150px;height:150px">
+                    <p style="color:white"> Dr. Adil Masood Siddiqui </p>
+                    <p style="color:white">PRINCIPAL(NUST)</p>
+                    <p style="color:white">PhD Computer Engineering, Iowa State University, USA, 1988,MS Computer Engineering, Iowa State University, USA 1985.</p>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="#" class="thumbnail" style="text-align:center;background-color:black">
+                    <img src="~/Images/lumspri.png" alt="fast" style="width:150px;height:150px">
+                    <p style="color:white"> Dr. Fakharul Inam  </p>
+                    <p style="color:white">PRINCIPAL(LUMS)</p>
+                    <p style="color:white">PhD Computer Engineering, Iowa State University, USA, 1988,MS Computer Engineering, Iowa State University, USA 1985.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div><br />
+
+
+
+
+<div id="contact" style=" height: 300px">
+    <div class="container text-center">
+        <h3><b>CONTACT US</b></h3>
+        <div class="row" style="font-family:Arial">
+            <div class="col-sm-4">
+                <h3>Send Us A Message</h3>
+                <h4>bcsf12a037@pucit.edu.pk</h4>
+            </div>
+            <div class="col-sm-4">
+                <h3>Call Us</h3>
+                <h4>111-923-923-ext-113</h4>
+            </div>
+            <div class="col-sm-4">
+                <h3>We Are Social</h3>
+                <a href="#"><span id="en" class="glyphicon glyphicon-envelope"></span></a>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<br />
+<footer class="container-fluid text-center" style=" height: 50px">
+    <a href="#" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+    <h6>Created By: <a href="http://www.google.com">BCSF12A037</a></h6>
+</footer>

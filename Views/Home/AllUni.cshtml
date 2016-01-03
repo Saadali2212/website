@@ -1,0 +1,137 @@
+﻿@{
+    Layout = "~/Views/Shared/_AllUni.cshtml";
+}
+<style>
+ footer {
+    background-color:#222222;
+    }
+    #contact{
+    background-color:black;
+    }
+    #all{
+         background-color:black;
+    }
+      h4 {
+          color:white;
+      }
+          h3 {
+          color:white;
+      }
+            #en{
+          font-size:large;
+          color:white;
+      }
+              h6 {
+          color:white;
+      }
+    </style>
+<nav class=" navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="Home.html">DataWareHouse<span class="glyphicon glyphicon-registration-mark"></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="~/Home/Layoutstart"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                <li><a href="#all">Universities</a></li>
+                <li><a href="#contact">ContactUs</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="~/Home/Layoutstart"><span class="glyphicon glyphicon-log-out"></span> Sign-Out</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<br /><br />
+
+<div class="jumbotron" id="signIn" style="background-color:black">
+
+    <h2 class="text-center"><b>WELCOME TO <mark>DATAWAREHOUSE</mark></b></h2>
+    <h3 class="text-center"><b>DOWNLOAD IMPORTANT STUFF FROM</b></h3>
+    <h3 class="text-center"><b>UNIVERSITIES REPOSITORY</b></h3>
+    <br /><br />
+</div>
+<div id="all">
+    <br />
+    <div class="container" style="background-color:black">
+
+        <div class="row">
+            <div class="col-md-4 " style="text-align:center;background-color:black">
+                <a href="~/Home/AllTeacher" class="thumbnail" style="background-color:black">
+                    <img src="~/Images/pu.jpg" alt="Pucit" style="width:150px;height:150px">
+                    <p style="color:white">University Of Punjab (PUCIT) </p>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Home/AllTeacher" class="thumbnail" style="text-align:center;background-color:black">
+                    <img src="~/Images/lums.jpg" alt="fast" style="width:150px;height:150px">
+                    <p style="color:white">Lahore University of Managemant and Sciences (LUMS) </p>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Home/AllTeacher" class="thumbnail" style="text-align:center;background-color:black">
+                    <img src="~/Images/fast.jpg" alt="fast" style="width:150px;height:150px">
+                    <p style="color:white"> National University College of Emerging Sciences (FAST) </p>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="~/Home/AllTeacher" class="thumbnail" style="text-align:center;background-color:black">
+                    <img src="~/Images/comsats.jpg" alt="fast" style="width:150px;height:150px">
+                    <p style="color:white"> COMSATS Institute of Information Technology (COMSATS) </p>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Home/AllTeacher" class="thumbnail" style="text-align:center;background-color:black">
+                    <img src="~/Images/nust.jpg" alt="fast" style="width:150px;height:150px">
+                    <p style="color:white"> Natioanl University of Sciences and Technology (NUST) </p>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Home/AllTeacher" class="thumbnail" style="text-align:center;background-color:black">
+                    <img src="~/Images/giki.jpg" alt="fast" style="width:150px;height:150px">
+                    <p style="color:white"> Ghulam Ishaq Khan Institute (GIKI) </p>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<br /><br />
+
+<div id="contact" style=" height: 300px">
+    <div class="container text-center">
+        <h3><b>CONTACT US</b></h3>
+        <div class="row" style="font-family:Arial">
+            <div class="col-sm-4">
+                <h3>Send Us A Message</h3>
+                <h4>bcsf12a037@pucit.edu.pk</h4>
+            </div>
+            <div class="col-sm-4">
+                <h3>Call Us</h3>
+                <h4>111-923-923-ext-113</h4>
+            </div>
+            <div class="col-sm-4">
+                <h3>We Are Social</h3>
+                <a href="#"><span id="en" class="glyphicon glyphicon-envelope"></span></a>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<br />
+
+<footer class="container-fluid text-center">
+    <a href="#" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+    <h6>Created By: <a href="http://www.google.com">BCSF12A037</a></h6>
+</footer>

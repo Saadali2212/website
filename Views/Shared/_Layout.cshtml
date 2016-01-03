@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title Home</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <style>
+        h3 {
+            color: white;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        footer {
+            background-color: #222222;
+        }
+
+        h6 {
+            color: white;
+        }
+
+        #contact {
+            background-color: black;
+        }
+
+        h4 {
+            color: white;
+        }
+
+        #en {
+            font-size: large;
+            color: white;
+        }
+
+        #about {
+            background-color: black;
+        }
+
+        #txt {
+            font-size: small;
+        }
+
+        #logIn {
+            background-color: #222222;
+        }
+    </style>
+
+</head>
+<body style="margin:0; background:url(Images/red.jpg);background-attachment:fixed;background-size:100%; background-repeat:no-repeat" data-spy="scroll" data-target=".navbar" data-offset="60" id="mybody">
+
+        @RenderBody()
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

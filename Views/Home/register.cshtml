@@ -1,0 +1,105 @@
+﻿@{
+    Layout = "~/Views/Shared/_Register.cshtml";
+}
+<style>
+    #b2 {
+        text-align: right;
+    }
+</style>
+
+<div class="container-fluid">
+    <div class="page-header">
+        <h1 style="background-color:black;color:white;text-align:center;">Registration Panel</h1>
+    </div>
+    <br />
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6">
+                <div><h2 style="background-color:black;color:white"><strong><span class="glyphicon glyphicon-asterisk"></span>Required Field</strong></h2></div>
+                <form role="form" action="~/Home/Layoutstart">
+                    <div class="form-group">
+                        <span class="glyphicon glyphicon-asterisk" style="color:white"></span><label style="color:white"><b>Photo: </b></label>
+                        <div style="position:relative;">
+                            <a class='btn btn-primary' href='javascript:;'>
+                                Choose File...
+                                <input type="file" style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;color:transparent;' name="file_source" size="40" onchange='$("#upload-file-info").html($(this).val());'>
+                            </a>
+                            &nbsp;
+                            <span class='label label-info' id="upload-file-info"></span>
+                        </div>
+
+                    </div>
+                </form>
+                <form>
+                <div class="form-group">
+                    <span class="glyphicon glyphicon-asterisk" style="color:white"></span><label style="color:white" for="email">Email Name:</label>
+                    <input type="text" class="form-control input-lg" id="email">
+                </div>
+                <div class="form-group">
+                    <span class="glyphicon glyphicon-asterisk" style="color:white"></span> <label style="color:white" for="pwd">Enter Email:</label>
+                    <input type="email" class="form-control input-lg" id="pwd">
+                </div>
+                <div class="form-group">
+                    <span class="glyphicon glyphicon-asterisk" style="color:white"></span><label style="color:white" for="pwd">Enter Password:</label>
+                    <input type="password" class="form-control input-lg" id="pwd">
+                </div>
+                <div class="form-group ">
+                    <span class="glyphicon glyphicon-asterisk" style="color:white"></span><label style="color:white" for="pwd">Enter University Name:</label>
+                    <select class="form-control" id="sel1">
+                        <option>Punjab University Allama Iqbal Campus(PU)</option>
+                        <option>Lahore University of Managemant and Sciences(LUMS)</option>
+                        <option>National University College of Emerging Sciences(FAST)</option>
+                        <option>COMSATS Institute of Information Technology(CIIT)</option>
+                        <option>Natioanl University of Sciences and Technology(NUST)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label style="color:white"><b>GENDER: </b></label>
+                    <input type="radio" name="Gender" value="M" required><b> <label style="color:white">MALE </label></b></>
+                    <input type="radio" name="Gender" value="F" required><b> <label style="color:white"> FEMALE</label> </b></>
+                </div>
+
+                <button type="submit" class="btn btn-info pull-left"><b>Teacher Sign-Up</b></button>
+                </form>
+            </div>
+               
+             
+
+            <div class="col-lg-6 ">
+                <div><h2 style="background-color:black;color:white"><strong><span class="glyphicon glyphicon-asterisk"></span>Required Field</strong></h2></div>
+                <div class="container"></div>
+                <form role="form" action="~/Home/Layoutstart">
+                    <div class="form-group">
+                        <span class="glyphicon glyphicon-asterisk" style="color:white"></span> <label style="color:white" for="email">Email Name:</label>
+                        <input type="text" class="form-control input-lg" id="email">
+                    </div>
+                    <div class="form-group">
+                        <span class="glyphicon glyphicon-asterisk" style="color:white"></span><label style="color:white" for="pwd">Enter Email:</label>
+                        <input type="email" class="form-control input-lg" id="pwd">
+                    </div>
+                    <div class="form-group">
+                        <span class="glyphicon glyphicon-asterisk" style="color:white"></span><label style="color:white" for="pwd">Enter Password:</label>
+                        <input type="password" class="form-control input-lg" id="pwd">
+                    </div>
+                    <div class="form-group">
+                        <span class="glyphicon glyphicon-asterisk" style="color:white"></span><label style="color:white" for="sel1">Select University:</label>
+                        <select class="form-control" id="sel1">
+                            <option>Punjab University Allama Iqbal Campus(PU)</option>
+                            <option>Lahore University of Managemant and Sciences(LUMS)</option>
+                            <option>National University College of Emerging Sciences(FAST)</option>
+                            <option>COMSATS Institute of Information Technology(CIIT)</option>
+                            <option>Natioanl University of Sciences and Technology(NUST)</option>
+                        </select>
+                    </div>
+                    <br />
+                    <button id="b2" type="submit" class="btn btn-info pull-left"><b>Student Sign-Up</b></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
